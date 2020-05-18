@@ -16,7 +16,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
 
-    invalid_input = "Invalid input, try again"
+    invalid_input = "Please enter a valid input.Otherwise get lost"
 
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user raw_input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
@@ -206,7 +206,7 @@ def raws_data1(df):
         else:
             break
 
-
+# origin : All the function will be called through this function
 def main():
     while True:
         city, month, day = get_filters()
